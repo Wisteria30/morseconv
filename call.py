@@ -33,27 +33,3 @@ def convert(pic):
         ans += morse.s2m(c)
 
     return ans
-    # Javaのファイルで文字列をモールス信号に変換
-    # cmd = 'java morseRet ' + pic
-    # process = subprocess.Popen(cmd, stdout=subprocess.PIPE,
-    #                            shell=True).communicate()[0]
-
-    # def res_cmd(cmd):
-    #     return process
-
-    # str = res_cmd(cmd).decode('utf-8')
-    # for num in range(len(str)):
-
-    #     if str[num] == '.':
-    #         print('とん')
-    #         # print('処理A')  1拍点灯
-    #     if str[num] == '-':
-    #         print('つー')
-    #         # print('処理B')  3拍点灯
-    #     if str[num] == '~':
-    #         print('スペース')
-    #         # print('処理C')  　3拍消灯
-    #     if str[num] == '_':
-    #         print('アンダースコア')
-    #     # print('処理D')  7拍消灯
-    #     # ７拍点灯だがスペース時の3拍に挟まれるため1拍消灯で3+1+3で7拍消灯となる
